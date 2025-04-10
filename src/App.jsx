@@ -31,11 +31,11 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} />  
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<Register />} />
       
         <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/teachers" element={<Teachers />} />
           <Route path="/user/:id" element={<UserDetails />} />
